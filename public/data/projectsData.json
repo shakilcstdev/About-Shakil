@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "name": "Libra Nova",
+    "images": [
+      "https://i.ibb.co.com/JFmppFTF/book2.png",
+      "https://i.ibb.co.com/Wv1kTM9f/book3.png",
+      "https://i.ibb.co.com/Kjry39Y9/book4.png"
+    ],
+    "description": "Next.js full-stack library management system with Firebase Authentication, MongoDB, role-based dashboards, and Stripe payments.",
+    "features": [
+      "Books List & Book Details Page",
+      "Firebase Authentication (Login/Register/Logout)",
+      "MongoDB integration for users and books",
+      "Role-based dashboard for User, Librarian, Admin",
+      "Stripe Payment Integration for purchasing books",
+      "Borrow Books functionality with LocalStorage",
+      "Book Review System"
+    ],
+    "benefits": [
+      "Effortless book management for library admins",
+      "Secure user authentication with Firebase",
+      "Streamlined borrowing and payment system",
+      "Users can track and review borrowed books"
+    ],
+    "challenges": "Handling SSR issues on Vercel and integrating multiple services together.",
+    "learnings": "Learned Next.js server & client component mix, Firebase auth, MongoDB integration, and Stripe payments.",
+    "tech": ["Next.js", "React", "Firebase", "MongoDB", "TailwindCSS", "Stripe"],
+    "github": "https://github.com/JerinOnTheXplore/next-base",
+    "live": "https://libra-nova-next-js-project.vercel.app/"
+  },
+  {
+    "id": 2,
+    "name": "Tourism Flow",
+    "images": [
+      "https://i.ibb.co.com/M59YHbmS/tour.png",
+      "https://i.ibb.co.com/667pcWt/tour-2.png",
+      "https://i.ibb.co.com/bt7tcJf/tour3.png"
+    ],
+    "description": "A full-stack tourism management system featuring booking, user roles, and admin controls.",
+    "features": [
+      "User-friendly booking system with Firebase authentication",
+      "Admin dashboard for managing packages and bookings",
+      "Dynamic pricing visualization using charts"
+    ],
+    "benefits": [
+      "Makes trip planning effortless for users through one platform",
+      "Helps admins manage tourism data and bookings efficiently",
+      "Improves transparency in pricing and user experience"
+    ],
+    "challenges": "Balancing multiple user roles and secure authentication flow.",
+    "learnings": "Learned efficient state management with React and implemented secure JWT-based role access.",
+    "tech": ["React", "Express", "MongoDB", "TailwindCSS"],
+    "github": "https://github.com/JerinOnTheXplore/tourism-client",
+    "live": "https://tourism-flow.web.app"
+  },
+  {
+    "id": 3,
+    "name": "EduMates",
+    "images": [
+      "https://i.ibb.co.com/KzRHd0v8/online.png",
+      "https://i.ibb.co.com/0PxBWrF/goup2.png",
+      "https://i.ibb.co.com/1fLtVjQ2/group3.png"
+    ],
+    "description": "MERN stack platform for group assignments, submission, and grading with JWT auth.",
+    "features": [
+      "Assignment submission and grading system",
+      "Pending and completed assignments tracking",
+      "JWT-based authentication and role-based access"
+    ],
+    "benefits": [
+      "Encourages collaborative learning through shared assignments",
+      "Simplifies grading and feedback for teachers/examiners",
+      "Saves time with automated status updates for submissions"
+    ],
+    "challenges": "Handling dynamic filtering between examiner and student views was tricky.",
+    "learnings": "Got hands-on with RESTful API structuring and protected routes in MERN.",
+    "tech": ["React", "Express", "MongoDB", "JWT"],
+    "github": "https://github.com/JerinOnTheXplore/online-group-study-client",
+    "live": "https://online-group-study-e3eaf.web.app"
+  },
+  {
+    "id": 4,
+    "name": "Plant Care Tracker",
+    "images": [
+      "https://i.ibb.co.com/4wNjckTQ/plant.png",
+      "https://i.ibb.co.com/k24Wz0qW/plant2.png",
+      "https://i.ibb.co.com/KjGVWcs7/plant3.png"
+    ],
+    "description": "Full CRUD plant care tracker built with React and Express, with personalized plant management.",
+    "features": [
+      "Add, update, delete, and track plants",
+      "Dark/light theme toggle with global context",
+      "Visual chart of watering frequency"
+    ],
+    "benefits": [
+      "Helps plant owners organize and monitor plant care easily",
+      "Reduces overwatering or missed watering through reminders",
+      "Provides a personalized digital plant journal experience"
+    ],
+    "challenges": "Synchronizing real-time UI updates after CRUD operations.",
+    "learnings": "Learned how to manage global state efficiently using Context and React Query.",
+    "tech": ["React", "Express", "MongoDB"],
+    "github": "https://github.com/JerinOnTheXplore/plant-care-tracker-client",
+    "live": "https://plant-care-tracker-80dfe.web.app"
+  }
+]

@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional: Body base style */
+body {
+  @apply bg-white text-gray-800 dark:bg-gray-900  dark:text-gray-100;
+  overflow-x: hidden;
+}
+
+
