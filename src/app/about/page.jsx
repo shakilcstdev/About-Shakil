@@ -69,7 +69,7 @@ export default function About() {
                 transition={{ duration: 0.8 }}
               >
                 <Image
-                  src="/public/images/my-photo.jpg"
+                  src="/public/images/my-photo2 (2).png"
                   alt="Shakil Ahamed"
                   fill
                   sizes="(max-width: 768px) 176px, 224px"
