@@ -71,7 +71,7 @@ export default function Sidebar() {
               >
                 <Image
                   src="/images/my-photo.jpg"
-                  alt="Jerin"
+                  alt="Shakil Ahamed"
                   fill
                   sizes="(max-width: 768px) 176px, 224px"
                   className="object-cover object-top"
