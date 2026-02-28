@@ -233,7 +233,7 @@ Habiganj, Bangladesh</span>
     className="flex justify-center"
   >
     <img
-      src="https://github-readme-stats.vercel.app/api?username=JerinOnTheXplore&show_icons=true&theme=transparent&count_private=true"
+      src="https://github-readme-stats.vercel.app/api?username=shakilcstdev&show_icons=true&theme=transparent&count_private=true"
       alt="GitHub Stats"
       className="w-110 sm:w-full md:w-100 lg:w-130 rounded-lg shadow-lg"
     />
@@ -247,7 +247,7 @@ Habiganj, Bangladesh</span>
     className="flex justify-center"
   >
     <img
-      src="https://github-readme-stats.vercel.app/api/top-langs/?username=JerinOnTheXplore&layout=compact&theme=transparent"
+      src="https://github-readme-stats.vercel.app/api/top-langs/?username=shakilcstdev&layout=compact&theme=transparent"
       alt="Top Languages"
       className="w-72 sm:w-full md:w-80 lg:w-96 rounded-lg shadow-lg"
     />
@@ -261,7 +261,7 @@ Habiganj, Bangladesh</span>
     className="flex justify-center"
   >
     <img
-      src="https://github-readme-streak-stats.herokuapp.com/?user=JerinOnTheXplore&theme=transparent"
+      src="https://github-readme-streak-stats.herokuapp.com/?user=shakilcstdev&theme=transparent"
       alt="GitHub Streak"
       className="w-70 sm:w-full md:w-80 lg:w-96 rounded-lg shadow-lg"
     />
