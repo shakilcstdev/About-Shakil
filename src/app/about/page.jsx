@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Slider from "react-slick";
-import { motion, useViewportScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
@@ -23,7 +23,7 @@ export default function About() {
   };
 
   // scroll-based parallax
-  const { scrollY } = useViewportScroll();
+  const { scrollY } = useScroll();
   const headingY = useTransform(scrollY, [0, 500], [0, -100]); // heading moves slower
   
 
@@ -69,13 +69,13 @@ export default function About() {
                 transition={{ duration: 0.8 }}
               >
                 <Image
-                  src="/public/images/my-photo2 (2).png"
-                  alt="Shakil Ahamed"
-                  fill
-                  sizes="(max-width: 768px) 176px, 224px"
-                  className="object-cover object-top"
-                  
-                />
+  src="/images/my-photo.jpg"
+  alt="Shakil Ahamed"
+  fill
+  priority
+  sizes="(max-width: 768px) 176px, 224px"
+  className="object-cover object-top"
+/>
               </motion.div>
               <motion.h2
                 className="text-2xl font-semibold tracking-wide mt-6"
