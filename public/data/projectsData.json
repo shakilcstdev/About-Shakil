@@ -1,11 +1,11 @@
 [
   {
     "id": 1,
-    "name": "Libra Nova",
+    "name": "English is Easy",
     "images": [
-      "https://i.ibb.co.com/JFmppFTF/book2.png",
-      "https://i.ibb.co.com/Wv1kTM9f/book3.png",
-      "https://i.ibb.co.com/Kjry39Y9/book4.png"
+      "https://i.ibb.co.com/v4nf3fJP/book2.png",
+      "https://i.ibb.co.com/B2gqWJMy/book3.png",
+      "https://i.ibb.co.com/213CzDkF/book4.png"
     ],
     "description": "Next.js full-stack library management system with Firebase Authentication, MongoDB, role-based dashboards, and Stripe payments.",
     "features": [
@@ -26,16 +26,16 @@
     "challenges": "Handling SSR issues on Vercel and integrating multiple services together.",
     "learnings": "Learned Next.js server & client component mix, Firebase auth, MongoDB integration, and Stripe payments.",
     "tech": ["Next.js", "React", "Firebase", "MongoDB", "TailwindCSS", "Stripe"],
-    "github": "https://github.com/JerinOnTheXplore/next-base",
-    "live": "https://libra-nova-next-js-project.vercel.app/"
+    "github": "https://github.com/shakilcstdev/English-is-Easy",
+    "live": "https://strong-sorbet-92c0f5.netlify.app/"
   },
   {
     "id": 2,
-    "name": "Tourism Flow",
+    "name": "Auction Gallery Logo",
     "images": [
-      "https://i.ibb.co.com/M59YHbmS/tour.png",
-      "https://i.ibb.co.com/667pcWt/tour-2.png",
-      "https://i.ibb.co.com/bt7tcJf/tour3.png"
+      "https://i.ibb.co.com/s9bWmZWD/tour.png",
+      "https://i.ibb.co.com/zT1Gggdj/tour-2.png",
+      "https://i.ibb.co.com/276hGkRL/tour3.png"
     ],
     "description": "A full-stack tourism management system featuring booking, user roles, and admin controls.",
     "features": [
@@ -51,16 +51,16 @@
     "challenges": "Balancing multiple user roles and secure authentication flow.",
     "learnings": "Learned efficient state management with React and implemented secure JWT-based role access.",
     "tech": ["React", "Express", "MongoDB", "TailwindCSS"],
-    "github": "https://github.com/JerinOnTheXplore/tourism-client",
-    "live": "https://tourism-flow.web.app"
+    "github": "https://github.com/shakilcstdev/Auction-Gallery",
+    "live": "https://superlative-taffy-a86588.netlify.app/"
   },
   {
     "id": 3,
-    "name": "EduMates",
+    "name": "JobTrack",
     "images": [
-      "https://i.ibb.co.com/KzRHd0v8/online.png",
-      "https://i.ibb.co.com/0PxBWrF/goup2.png",
-      "https://i.ibb.co.com/1fLtVjQ2/group3.png"
+      "https://i.ibb.co.com/wNqWSpH4/online.png",
+      "https://i.ibb.co.com/d0s9JBJ9/goup2.png",
+      "https://i.ibb.co.com/d0Zdp24R/group3.png"
     ],
     "description": "MERN stack platform for group assignments, submission, and grading with JWT auth.",
     "features": [
@@ -76,18 +76,18 @@
     "challenges": "Handling dynamic filtering between examiner and student views was tricky.",
     "learnings": "Got hands-on with RESTful API structuring and protected routes in MERN.",
     "tech": ["React", "Express", "MongoDB", "JWT"],
-    "github": "https://github.com/JerinOnTheXplore/online-group-study-client",
-    "live": "https://online-group-study-e3eaf.web.app"
+    "github": "https://github.com/shakilcstdev/Job-Portal",
+    "live": "https://my-ph-oo9.web.app/"
   },
   {
     "id": 4,
-    "name": "Plant Care Tracker",
+    "name": " Lawyer.BD",
     "images": [
-      "https://i.ibb.co.com/4wNjckTQ/plant.png",
-      "https://i.ibb.co.com/k24Wz0qW/plant2.png",
-      "https://i.ibb.co.com/KjGVWcs7/plant3.png"
+      "https://i.ibb.co.com/CpSV2NJL/plant.png",
+      "https://i.ibb.co.com/kgPrVjvF/plant2.png",
+      "https://i.ibb.co.com/bMhyvTgG/plant3.png"
     ],
-    "description": "Full CRUD plant care tracker built with React and Express, with personalized plant management.",
+    "description": "Full CRUD Lawyer.BD built with React and Express, with personalized plant management.",
     "features": [
       "Add, update, delete, and track plants",
       "Dark/light theme toggle with global context",
@@ -101,7 +101,7 @@
     "challenges": "Synchronizing real-time UI updates after CRUD operations.",
     "learnings": "Learned how to manage global state efficiently using Context and React Query.",
     "tech": ["React", "Express", "MongoDB"],
-    "github": "https://github.com/JerinOnTheXplore/plant-care-tracker-client",
-    "live": "https://plant-care-tracker-80dfe.web.app"
+    "github": "https://github.com/shakilcstdev/projects-8",
+    "live": "https://projects-8-r6kt.vercel.app/"
   }
 ]

@@ -20,7 +20,14 @@ export default function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setStatus("Sending...");
 
+    // EmailJS কনফিগারেশন (এনভায়রনমেন্ট ভেরিয়েবল ব্যবহার করুন)
+    const serviceId = "service_7kuig9a"; 
+    const templateId = "template_egq7pmo"; 
+      const publicKey = "qfz8cUGMJog5fKDfn"; // ◄◄◄ কোটেশন যোগ করা হয়েছে
+
+    // ভ্যালিডেশন চেক
     if (!formData.name || !formData.email || !formData.message) {
       setStatus("Please fill in all required fields.");
       return;
@@ -33,16 +40,23 @@ export default function Contact() {
     }
 
     try {
+      // EmailJS-এ ডাটা পাঠান (টেমপ্লেট ভেরিয়েবলের সাথে মিল রেখে)
       await emailjs.send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-        formData,
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+        serviceId,
+        templateId,
+        {
+          from_name: formData.name,        // টেমপ্লেটে {{from_name}}
+          from_email: formData.email,      // টেমপ্লেটে {{from_email}}
+          subject: formData.subject,        // টেমপ্লেটে {{subject}}
+          message: formData.message,        // টেমপ্লেটে {{message}}
+        },
+        publicKey
       );
+
       setStatus("Message sent successfully!");
-      setFormData({ name: "", email: "", subject: "", message: "" });
+      setFormData({ name: "", email: "", subject: "", message: "" }); // ফর্ম খালি করুন
     } catch (error) {
-      console.error(error);
+      console.error("EmailJS Error:", error);
       setStatus("Failed to send message. Please try again later.");
     }
   };
@@ -50,10 +64,10 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className=" relative flex flex-col items-center justify-center py-20 px-6 bg-base-100"
+      className="relative flex flex-col items-center justify-center py-20 px-6 bg-base-100"
     >
       {/* Glass Panel */}
-      <div className="absolute inset-0 backdrop-blur-lg pointer-events-none rounded-3xl "></div>
+      <div className="absolute inset-0 backdrop-blur-lg pointer-events-none rounded-3xl"></div>
 
       {/* Heading */}
       <motion.div
@@ -62,7 +76,9 @@ export default function Contact() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        <h2 className="text-4xl md:text-5xl font-bold text-base-content mb-2">Get in Touch</h2>
+        <h2 className="text-4xl md:text-5xl font-bold text-base-content mb-2">
+          Get in Touch
+        </h2>
         <div className="w-56 sm:w-56 md:w-70 h-1 bg-blue-400/80 mx-auto rounded mb-12"></div>
         <p className="text-lg md:text-xl text-base-content dark:text-gray/90">
           Feel free to reach out for collaborations, questions, or just to say hi!
@@ -75,10 +91,10 @@ export default function Contact() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
       >
-        {/* contact form */}
+        {/* Contact Form */}
         <form
           onSubmit={handleSubmit}
-          className="flex-1 bg-base-300 p-10 rounded shadow flex flex-col gap-5 backdrop-blur-lg  transition-all duration-500"
+          className="flex-1 bg-base-300 p-10 rounded shadow flex flex-col gap-5 backdrop-blur-lg transition-all duration-500"
         >
           <input
             type="text"
@@ -116,7 +132,10 @@ export default function Contact() {
             required
           ></textarea>
 
-          <button className="btn bg-blue-400/50 text-base-content font-semibold w-full shadow-lg transition-all duration-300">
+          <button
+            type="submit"
+            className="btn bg-blue-400/50 text-base-content font-semibold w-full shadow-lg transition-all duration-300"
+          >
             Send Message
           </button>
 
@@ -132,8 +151,10 @@ export default function Contact() {
         </form>
 
         {/* Direct Contact Options */}
-        <div className="flex-1 flex flex-col justify-center gap-6 bg-blue-400/40 p-10 rounded shadow backdrop-blur-lg  transition-all duration-500">
-          <h3 className="text-2xl font-semibold text-center text-base-content mb-4">Direct Contact</h3>
+        <div className="flex-1 flex flex-col justify-center gap-6 bg-blue-400/40 p-10 rounded shadow backdrop-blur-lg transition-all duration-500">
+          <h3 className="text-2xl font-semibold text-center text-base-content mb-4">
+            Direct Contact
+          </h3>
           <p className="text-center text-base-content mb-4">
             Alternatively, you can reach me via these platforms:
           </p>
