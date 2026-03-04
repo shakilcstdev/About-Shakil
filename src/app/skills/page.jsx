@@ -146,55 +146,67 @@ export default function Skills() {
           ))}
         </div>
 
-        {/* Achievements Section */}
-        <div
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          className="mt-12 sm:mt-16 max-w-5xl mx-auto bg-base-300 p-4 sm:p-6 md:p-10 rounded-lg shadow-[0_0_30px_rgba(59,130,246,0.2)]"
-        >
+        {/* Achievements Section - Now with two certificates */}
+        <div className="mt-12 sm:mt-16 max-w-5xl mx-auto bg-base-300 p-4 sm:p-6 md:p-10 rounded-lg shadow-[0_0_30px_rgba(59,130,246,0.2)]">
           <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-4 sm:mb-6">
             Achievements & Certifications
           </h3>
           <div className="w-24 sm:w-32 md:w-48 h-1 bg-blue-400/80 mx-auto mb-6 sm:mb-8 rounded"></div>
 
-          <div className="flex flex-col md:flex-row items-center justify-center gap-4 sm:gap-6">
-            {/* Certificate Image */}
-            <div
-              data-aos="zoom-in"
-              data-aos-delay="200"
-              className="w-full md:w-1/2 flex justify-center"
-            >
-              <img
-                src="https://i.ibb.co.com/yFB7VF8z/Certificate.png"
-                alt="Programming Hero Certificate"
-                className="w-full max-w-[300px] sm:max-w-[400px] md:max-w-full rounded-xl shadow-lg border border-blue-400/60 hover:scale-[1.03] transition-transform duration-300"
-              />
+          {/* Two certificates in a responsive grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Certificate 1 */}
+            <div className="bg-base-100 p-4 rounded-xl shadow-lg border border-blue-400/20 hover:shadow-2xl transition-shadow">
+              <div className="flex flex-col md:flex-row items-center gap-4">
+                <img
+                  src="https://i.ibb.co.com/yFB7VF8z/Certificate.png"
+                  alt="Programming Hero Certificate"
+                  className="w-full max-w-[200px] md:max-w-[150px] rounded-lg border border-blue-400/60"
+                />
+                <div className="text-center md:text-left">
+                  <h4 className="text-lg font-semibold text-blue-400/90">
+                    Programming Hero - Web Development
+                  </h4>
+                  <p className="text-sm text-base-content/80 mt-2">
+                    Completed MERN stack course with JavaScript, React, Node.js, MongoDB.
+                  </p>
+                  <a
+                    href="https://i.ibb.co.com/yFB7VF8z/Certificate.png"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block mt-3 bg-blue-400/50 px-4 py-2 rounded-lg text-sm hover:scale-105 transition"
+                  >
+                    View Certificate
+                  </a>
+                </div>
+              </div>
             </div>
 
-            {/* Certificate Details */}
-            <div
-              data-aos="fade-up"
-              data-aos-delay="300"
-              className="w-full md:w-1/2 text-center md:text-left px-2 sm:px-0"
-            >
-              <h4 className="text-base sm:text-lg md:text-xl font-semibold mb-2 text-blue-400/80">
-                Programming Hero - Complete Web Development Course
-              </h4>
-              <p className="text-sm sm:text-base text-base-content/80 leading-relaxed mb-4 sm:mb-4">
-                Successfully completed web development program focused on
-                JavaScript, React, Node.js, Express.js, MongoDB, and modern web technologies. 
-                Built multiple hands-on projects showcasing MERN stack proficiency with 
-                additional expertise in Next.js, TypeScript, PostgreSQL, Prisma ORM,
-                and various authentication methods including Firebase Auth, NextAuth, and Better Auth.
-              </p>
-              <a
-                href="https://i.ibb.co.com/yFB7VF8z/Certificate.png"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-blue-400/50 text-base-content px-5 sm:px-6 md:px-8 py-2 sm:py-2.5 md:py-3 rounded-lg shadow-lg hover:scale-105 transition-transform text-sm sm:text-base"
-              >
-                View Certificate
-              </a>
+            {/* Certificate 2 - Add your second certificate here */}
+            <div className="bg-base-100 p-4 rounded-xl shadow-lg border border-blue-400/20 hover:shadow-2xl transition-shadow">
+              <div className="flex flex-col md:flex-row items-center gap-4">
+                <img
+                  src="https://i.ibb.co.com/4wG6HdF8/Screenshot-2026-03-04-143743.png"  // ← Replace with your image link
+                  alt="Second Certificate"
+                  className="w-full max-w-[200px] md:max-w-[150px] rounded-lg border border-blue-400/60"
+                />
+                <div className="text-center md:text-left">
+                  <h4 className="text-lg font-semibold text-blue-400/90">
+                    European IT Institute-Graphic Design
+                  </h4>
+                  <p className="text-sm text-base-content/80 mt-2">
+                           Completed Graphic Design course with Adobe Photoshop, Illustrator, InDesign.
+                  </p>
+                  <a
+                    href="https://i.ibb.co.com/4wG6HdF8/Screenshot-2026-03-04-143743.png"      // ← Replace with actual link
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block mt-3 bg-blue-400/50 px-4 py-2 rounded-lg text-sm hover:scale-105 transition"
+                  >
+                    View Certificate
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
